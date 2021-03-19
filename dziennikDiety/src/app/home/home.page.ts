@@ -17,9 +17,13 @@ export class HomePage {
       this.getCartList()
     }
   
-  product_name:any=''
-  price:any=''
-  qty:any=''
+  kcal:any=''
+  sniad:any=''
+  dsniad:any=''
+  lunch:any=''
+  obiad:any=''
+  podw:any=''
+  kol:any=''
   product_list=[]
   error_msg=''
   btn='Add'

@@ -39,9 +39,15 @@
       <ion-item *ngFor="let x of product_list;let index=index">
 
           <ion-label>
-              <h2>{{x.name }}</h2>
-              <p>INR {{x.price}}</p>
-              <p>Qty: {{x.qty}}</p>
+              <h2>{{x.data }}</h2>
+              <!-- dodam ifa, gdy brakuje posilku -->
+              <p *ngIf="x.kcal!=0">Kcal: {{x.kcal}}</p>
+              <p *ngIf="x.sniad!=0">Śniadanie {{x.sniad}}</p>
+              <p *ngIf="x.dsniad!=0">Drugie śniadanie {{x.dsniad}}</p>
+              <p *ngIf="x.lunch!=0">Lunch {{x.lunch}}</p>
+              <p *ngIf="x.obiad!=0">Obiad {{x.obiad}}</p>
+              <p *ngIf="x.podw!=0">Podwieczorek {{x.podw}}</p>
+              <p *ngIf="x.kol!=0">Kolacja {{x.kol}}</p>
           </ion-label>
 
           <ion-button (click)="edit(x,index)">
