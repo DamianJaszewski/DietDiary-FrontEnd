@@ -1,0 +1,7 @@
+{
+  "name": "dziennikDiety",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
