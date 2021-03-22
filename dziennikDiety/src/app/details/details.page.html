@@ -1,9 +1,33 @@
+  
 <ion-header>
   <ion-toolbar>
-    <ion-title>details</ion-title>
+      <ion-title>
+          Strona
+      </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
 
+
+  <ion-list *ngIf="product_list.length!=0">
+      <ion-list-header>
+        <!-- dodam możliwość wybrania innego tygodnia -->
+          Najbliższy tydzień
+      </ion-list-header>
+
+      <ion-item *ngFor="let x of product_list;let index=index">
+
+          <ion-label>
+              <h2>{{x.data }}</h2>
+              <p *ngIf="x.kcal!=0">Kcal: {{x.kcal}}</p>
+              <p *ngIf="x.sniad!=0">Śniadanie {{x.sniad}}</p>
+              <p *ngIf="x.dsniad!=0">Drugie śniadanie {{x.dsniad}}</p>
+              <p *ngIf="x.lunch!=0">Lunch {{x.lunch}}</p>
+              <p *ngIf="x.obiad!=0">Obiad {{x.obiad}}</p>
+              <p *ngIf="x.podw!=0">Podwieczorek {{x.podw}}</p>
+              <p *ngIf="x.kol!=0">Kolacja {{x.kol}}</p>
+          </ion-label>
+        </ion-item> 
+  </ion-list>
 </ion-content>

@@ -52,7 +52,7 @@ export class HomePage {
     })
   }
 
-  details(x){
+  details(){
     this.router.navigate(["details"]);
   }
   // async update()

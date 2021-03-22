@@ -50,9 +50,7 @@
               <p *ngIf="x.kol!=0">Kolacja {{x.kol}}</p>
           </ion-label>
 
-          <ion-button (click)="details(x)">
-            Szczegóły
-          </ion-button>
+          <ion-button (click)="details()">Szczegóły</ion-button>
 
           <ion-button (click)="edit(x,index)">
               <ion-icon slot="icon-only" name="checkmark-circle"></ion-icon>
