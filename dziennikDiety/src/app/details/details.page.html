@@ -11,9 +11,14 @@
 
 
   <ion-list *ngIf="product_list.length!=0">
+
       <ion-list-header>
         <!-- dodam możliwość wybrania innego tygodnia -->
-          Lista przepisów
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="/"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
       </ion-list-header>
 
       <ion-item *ngFor="let x of product_list;let index=index">
