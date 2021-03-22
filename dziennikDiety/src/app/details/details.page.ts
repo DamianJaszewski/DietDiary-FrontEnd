@@ -17,16 +17,10 @@ export class DetailsPage{
     public http: HttpClient,
     public loadingController: LoadingController,
     private router: Router) {
-      this.getCartList()
+      this.getDetailsList()
     }
   
-  kcal:any=''
-  sniad:any=''
-  dsniad:any=''
-  lunch:any=''
-  obiad:any=''
-  podw:any=''
-  kol:any=''
+  name:any=''
   product_list=[]
   error_msg=''
   btn='Add'
@@ -46,9 +40,9 @@ export class DetailsPage{
   //   this.edit_index=index
   //   this.btn="Update"
   // }
-  getCartList()
+  getDetailsList()
   {
-    this.http.get('http://localhost/cart/get-cart-list.php').subscribe(data=>{
+    this.http.get('http://localhost/cart/get-details-list.php').subscribe(data=>{
     this.product_list=<Array<any>>data
     })
   }
