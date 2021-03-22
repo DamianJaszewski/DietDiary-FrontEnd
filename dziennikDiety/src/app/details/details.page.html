@@ -1,9 +1,9 @@
   
 <ion-header>
   <ion-toolbar>
-      <ion-title>
-          Szczegóły
-      </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -15,9 +15,14 @@
       <ion-list-header>
         <!-- dodam możliwość wybrania innego tygodnia -->
         <ion-toolbar>
-          <ion-buttons slot="start">
-            <ion-back-button defaultHref="/"></ion-back-button>
-          </ion-buttons>
+          <ion-button slot = "start" (click)="edit(x,index)">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </ion-button>
+          <ion-button slot="end" (click)="edit(x,index)">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+  
+          <ion-title>Buttons</ion-title>
         </ion-toolbar>
       </ion-list-header>
 
