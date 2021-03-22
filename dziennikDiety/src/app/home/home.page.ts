@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { AlertController, LoadingController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,8 @@ export class HomePage {
   constructor(private ac:AlertController,
     public toastController: ToastController,
     public http: HttpClient,
-    public loadingController: LoadingController) {
+    public loadingController: LoadingController,
+    private router: Router) {
       this.getCartList()
     }
   
@@ -48,6 +50,10 @@ export class HomePage {
     this.http.get('http://localhost/cart/get-cart-list.php').subscribe(data=>{
     this.product_list=<Array<any>>data
     })
+  }
+
+  details(x){
+    this.router.navigate(["details"]);
   }
   // async update()
   // {
