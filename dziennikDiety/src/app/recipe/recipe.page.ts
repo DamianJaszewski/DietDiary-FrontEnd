@@ -5,11 +5,11 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-details',
-  templateUrl: './details.page.html',
-  styleUrls: ['./details.page.scss'],
+  selector: 'app-recipe',
+  templateUrl: './recipe.page.html',
+  styleUrls: ['./recipe.page.scss'],
 })
-export class DetailsPage{
+export class RecipePage{
 
  
   constructor(private ac:AlertController,
@@ -45,10 +45,6 @@ export class DetailsPage{
     this.http.get('http://localhost/cart/get-details-list.php').subscribe(data=>{
     this.product_list=<Array<any>>data
     })
-  }
-
-  details(){
-    this.router.navigate(["recipe"]);
   }
   // async update()
   // {
