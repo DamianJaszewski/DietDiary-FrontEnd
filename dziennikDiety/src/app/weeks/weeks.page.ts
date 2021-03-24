@@ -5,12 +5,13 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-details',
-  templateUrl: './details.page.html',
-  styleUrls: ['./details.page.scss'],
+  selector: 'app-weeks',
+  templateUrl: './weeks.page.html',
+  styleUrls: ['./weeks.page.scss'],
 })
-export class DetailsPage{
+export class WeeksPage{
 
+ 
   constructor(private ac:AlertController,
     public toastController: ToastController,
     public http: HttpClient,
@@ -24,7 +25,7 @@ export class DetailsPage{
   error_msg=''
   btn='Add'
   edit_index=-1
-
+  
   getDetailsList()
   {
     this.http.get('http://localhost/cart/get-details-list.php').subscribe(data=>{
@@ -32,7 +33,7 @@ export class DetailsPage{
     })
   }
 
-  recipe(){
-    this.router.navigate(["recipe"]);
+  home(){
+    this.router.navigate(["/"]);
   }
 }

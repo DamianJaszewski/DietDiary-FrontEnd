@@ -1,10 +1,11 @@
   
 <ion-header>
-  <ion-toolbar>
-      <ion-title>
-          Dziennik diety
-      </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="weeks"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Dziennik diety</ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
@@ -42,7 +43,7 @@
           <ion-label>
               <h2>{{x.data }}</h2>
               <p *ngIf="x.kcal!=0">Kcal: {{x.kcal}}</p>
-              <p *ngIf="x.sniad!=0">Śniadanie {{x.sniad}}</p>
+              <p *ngIf="x.sniad!=0">Śniadanie: {{x.name}}</p>
               <p *ngIf="x.dsniad!=0">Drugie śniadanie {{x.dsniad}}</p>
               <p *ngIf="x.lunch!=0">Lunch {{x.lunch}}</p>
               <p *ngIf="x.obiad!=0">Obiad {{x.obiad}}</p>

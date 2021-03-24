@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/"></ion-back-button>
+      <ion-back-button defaultHref="details"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -31,6 +31,8 @@
               <h2>{{x.data }}</h2>
               <p *ngIf="x.kcal!=0">Name: {{x.name}}</p>
           </ion-label>
+
+         
         </ion-item> 
   </ion-list>
 </ion-content>

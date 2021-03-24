@@ -53,7 +53,7 @@ export class HomePage {
   }
 
   details(){
-    this.router.navigate(["details"]);
+    this.router.navigate(['details']);
   }
   // async update()
   // {
