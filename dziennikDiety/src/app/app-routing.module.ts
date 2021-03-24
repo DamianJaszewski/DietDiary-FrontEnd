@@ -12,10 +12,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'details',
-    loadChildren: () => import('./details/details.module').then( m => m.DetailsPageModule)
-  },
-  {
     path: 'recipe',
     loadChildren: () => import('./recipe/recipe.module').then( m => m.RecipePageModule)
   },

@@ -52,8 +52,8 @@ export class HomePage {
     })
   }
 
-  details(){
-    this.router.navigate(['details']);
+  recipe(){
+    this.router.navigate(['recipe']);
   }
   // async update()
   // {

@@ -34,8 +34,16 @@
 
   <ion-list *ngIf="product_list.length!=0">
       <ion-list-header>
-        <!-- dodam możliwość wybrania innego tygodnia -->
-          Najbliższy tydzień
+        <ion-toolbar>
+            <ion-button slot = "start" (click)="edit(x,index)">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </ion-button>
+            <ion-button slot="end" (click)="edit(x,index)">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-button>
+    
+            <ion-title>Dzisiaj</ion-title>
+          </ion-toolbar>
       </ion-list-header>
 
       <ion-item *ngFor="let x of product_list;let index=index">
@@ -51,7 +59,7 @@
               <p *ngIf="x.kol!=0">Kolacja {{x.kol}}</p>
           </ion-label>
 
-          <ion-button (click)="details()">Szczegóły</ion-button>
+          <ion-button (click)="recipe()">Szczegóły</ion-button>
       </ion-item>
 
   </ion-list>
