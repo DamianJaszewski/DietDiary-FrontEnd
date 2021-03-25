@@ -55,6 +55,10 @@ export class HomePage {
   recipe(){
     this.router.navigate(['recipe']);
   }
+
+  shoppingList(){
+    this.router.navigate(['shopping-list']);
+  }
   // async update()
   // {
 
