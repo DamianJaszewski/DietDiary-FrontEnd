@@ -24,12 +24,13 @@
     <ion-item *ngFor="let x of product_list;let index=index">
 
         <ion-label>
-            <h2>{{x.data }}</h2>
-            <p *ngIf="x.kcal!=0">Name: {{x.name}}</p>
+            <h2>{{x.data}}</h2>
+            <p *ngIf="x.kcal!=0">Kcal: {{x.kcal}}</p>
         </ion-label>
 
         <ion-button (click)="home()">Szczegóły</ion-button>
       </ion-item> 
-</ion-list>
+
+  </ion-list>
 
 </ion-content>

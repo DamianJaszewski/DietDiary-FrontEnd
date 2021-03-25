@@ -17,18 +17,24 @@ export class WeeksPage{
     public http: HttpClient,
     public loadingController: LoadingController,
     private router: Router) {
-      this.getDetailsList()
+      this.getCartList()
     }
   
-  name:any=''
+  kcal:any=''
+  sniad:any=''
+  dsniad:any=''
+  lunch:any=''
+  obiad:any=''
+  podw:any=''
+  kol:any=''
   product_list=[]
   error_msg=''
   btn='Add'
   edit_index=-1
-  
-  getDetailsList()
+
+  getCartList()
   {
-    this.http.get('http://localhost/cart/get-details-list.php').subscribe(data=>{
+    this.http.get('http://localhost/cart/get-cart-list.php').subscribe(data=>{
     this.product_list=<Array<any>>data
     })
   }
