@@ -12,7 +12,10 @@
 ## General info
 Add more general information about project. What the purpose of the project is? Motivation?
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./img/Today.png)
+![Example screenshot](./img/Weeks.png)
+![Example screenshot](./img/Recipe.png)
+![Example screenshot](./img/ShopList.png)
 ## Technologies
 * Tech 1 - version 1.0
 * Tech 2 - version 2.0
