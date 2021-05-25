@@ -1,6 +1,6 @@
 # DietDiary-FrontEnd Ionic, Angular APP
 > It's frontend of recpies app. Make with Ionic, Angular framework.
-	## Table of contents
+## Table of contents
 * [General info](#general-info)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
@@ -9,34 +9,34 @@
 * [Status](#status)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
-	## General info
+## General info
 Add more general information about project. What the purpose of the project is? Motivation?
-	## Screenshots
+## Screenshots
 ![Example screenshot](./img/screenshot.png)
-	## Technologies
+## Technologies
 * Tech 1 - version 1.0
 * Tech 2 - version 2.0
 * Tech 3 - version 3.0
-	## Setup
+## Setup
 Describe how to install / setup your local environement / add link to demo version.
-	## Code Examples
+## Code Examples
 Show examples of usage:
 `put-your-code-here`
 	```ruby  
 	private static String updateWeatherIcon(int condition){}
 	```
-	## Features
+## Features
 List of features ready and TODOs for future development
 * Awesome feature 1
 * Awesome feature 2
 * Awesome feature 3
-	To-do list:
+To-do list:
 * Wow improvement to be done 1
 * Wow improvement to be done 2
-	## Status
+## Status
 Project is: _in progress_.
-	## Inspiration
+## Inspiration
 Project inspired by bharathirajatut, "Add To Cart Example Using PHP, MySQL"
 https://github.com/bharathirajatut/ionic4-higher-example/tree/master/cart-crud-php-mysql-example
-	## Contact
+## Contact
 Created by Damian Jaszewski damianjaszewski@gmail.com - feel free to contact me!
