@@ -17,7 +17,7 @@
 * Ionic - version 6.13.1
 * Angular - version 11.2.5
 ## Setup
-Run with 'ionic serve'.
+Run with `ionic serve`.
 ## Code Examples
 Show examples of usage:
 `put-your-code-here`
