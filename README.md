@@ -1,7 +1,6 @@
 # DietDiary-FrontEnd Ionic, Angular APP
 > It's frontend of recpies app. Make with Ionic, Angular framework.
 ## Table of contents
-* [General info](#general-info)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
@@ -9,19 +8,16 @@
 * [Status](#status)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
-## General info
-Add more general information about project. What the purpose of the project is? Motivation?
 ## Screenshots
 ![Example screenshot](./img/Today.png)
 ![Example screenshot](./img/Weeks.png)
 ![Example screenshot](./img/Recipe.png)
 ![Example screenshot](./img/ShopList.png)
 ## Technologies
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* Ionic - version 6.13.1
+* Angular - version 11.2.5
 ## Setup
-Describe how to install / setup your local environement / add link to demo version.
+Run with 'ionic serve'.
 ## Code Examples
 Show examples of usage:
 `put-your-code-here`
