@@ -1,0 +1,71 @@
+  
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="weeks"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Dziennik diety</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- <ion-button (click)="getCartList()">Refresh</ion-button>
+
+  <ion-item>
+      <ion-label position="stacked">Product Name</ion-label>
+      <ion-input [(ngModel)]="product_name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label position="stacked">Price</ion-label>
+      <ion-input [(ngModel)]="price"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label position="stacked">Qty</ion-label>
+      <ion-input [(ngModel)]="qty"></ion-input>
+  </ion-item>
+  <div style="color:red" *ngIf="error_msg.length!=0">
+      {{error_msg}}
+  </div>
+  <div>
+      <ion-button (click)="add_update()">{{btn}}</ion-button>
+      <ion-button (click)="reset()">Reset</ion-button>
+  </div> -->
+
+  <ion-list *ngIf="product_list.length!=0">
+      <ion-list-header>
+        <ion-toolbar>
+            <ion-button slot = "start" (click)="edit(x,index)">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </ion-button>
+            <ion-button slot="end" (click)="edit(x,index)">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-button>
+    
+            <ion-title>Dzisiaj</ion-title>
+          </ion-toolbar>
+      </ion-list-header>
+
+      <ion-item *ngFor="let x of product_list;let index=index">
+
+          <ion-label>
+              <h2>{{x.data }}</h2>
+              <p *ngIf="x.kcal!=0">Kcal: {{x.kcal}}</p>
+              <p *ngIf="x.sniad!=0">Śniadanie: {{x.name}}</p>
+              <p *ngIf="x.dsniad!=0">Drugie śniadanie {{x.dsniad}}</p>
+              <p *ngIf="x.lunch!=0">Lunch {{x.lunch}}</p>
+              <p *ngIf="x.obiad!=0">Obiad {{x.obiad}}</p>
+              <p *ngIf="x.podw!=0">Podwieczorek {{x.podw}}</p>
+              <p *ngIf="x.kol!=0">Kolacja {{x.kol}}</p>
+          </ion-label>
+
+          <ion-button (click)="recipe()">Szczegóły</ion-button>
+      </ion-item>
+
+  </ion-list>
+    <section>
+        <div class="button-bottom">
+            <ion-button expand="block" (click)="shoppingList()">Lista zakupów</ion-button>
+        </div>
+    </section>
+</ion-content>

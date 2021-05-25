@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+
+  <ion-list *ngIf="product_list.length!=0">
+
+      <ion-list-header>
+        <!-- dodam możliwość wybrania innego tygodnia -->
+        <ion-toolbar>
+          <ion-button slot = "start" (click)="edit(x,index)">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </ion-button>
+          <ion-button slot="end" (click)="edit(x,index)">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+  
+          <ion-title>Śniadanie</ion-title>
+        </ion-toolbar>
+      </ion-list-header>
+
+      <ion-item *ngFor="let x of product_list;let index=index">
+
+          <ion-label>
+              <h2>{{x.data }}</h2>
+              <p *ngIf="x.kcal!=0">Name: {{x.name}}</p>
+              <p *ngIf="x.kcal!=0">{{x.photo}}</p>
+              <p *ngIf="x.kcal!=0">Przygotowanie: {{x.description}}</p>
+              <p *ngIf="x.kcal!=0">Składniki: {{x.ingradients}}</p>
+          </ion-label>
+        </ion-item> 
+  </ion-list>
+</ion-content>
